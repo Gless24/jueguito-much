@@ -38,10 +38,9 @@
       backdrop-filter: blur(6px);
       position:relative;
       overflow:visible;
-      margin-top:78px; /* 👈 espacio extra para los logos */
     }
 
-    /* Estilos base para todos los logos de esquina */
+    /* Logos de esquina */
     .logo-esquina{
       position:absolute;
       top:-65px;
@@ -51,19 +50,15 @@
       padding:6px 10px;
       box-shadow:0 6px 14px rgba(0,0,0,.25);
     }
-
-    /* Tamaño individual de cada logo */
     .logo-izq-abs{ 
-      left:20px; 
-      height:55px;
+      left:19px; height:52px;
     }
     .logo-der-abs{ 
-      right:20px; 
-      height:50px;
+      right:20px; height:60px;
       background:#f6f6f6;
     }
 
-    /* Logo del MUCH dentro del cuadro */
+    /* Logo MUCH */
     .logo-much{
       display:block;
       margin:0 auto clamp(16px, 4vw, 24px);
@@ -78,14 +73,18 @@
       text-shadow:0 2px 8px rgba(0,0,0,.35);
       margin: 6px 0 10px;
     }
-    p.sub{font-size:clamp(14px, 3.8vw, 20px); opacity:.95; margin-bottom:clamp(12px, 4vw, 18px)}
+    p.sub{
+      font-size:clamp(14px, 3.8vw, 20px); 
+      opacity:.95; 
+      margin-bottom:clamp(12px, 4vw, 18px)
+    }
 
     .btn{
       appearance:none; border:0; cursor:pointer; display:inline-block; text-decoration:none;
       padding:clamp(12px, 3.8vw, 16px) clamp(18px, 6vw, 22px);
       border-radius:16px; font-weight:900;
       font-size:clamp(16px, 4vw, 20px); color:#fff;
-      background:linear-gradient(135deg,#5d74da,#2e27b8);
+      background:linear-gradient(135deg,#f72585,#7209b7);
       box-shadow:0 18px 44px rgba(155,92,249,.35),0 6px 16px rgba(0,0,0,.25);
       min-width:200px; min-height:48px;
       transition: transform .06s, box-shadow .2s;
@@ -94,38 +93,31 @@
 
     .tip{margin-top:clamp(10px, 3vw, 14px); font-size:clamp(12px, 3.4vw, 14px); opacity:.9}
 
-    /* Ajustes para móviles angostos */
-    @media (max-width:430px){
-      .logo-izq-abs{ top:-58px; height:48px; left:16px; }
-      .logo-der-abs{ top:-58px; height:54px; right:16px; }
-    }
-
-    /* Ajuste landscape */
     @media (orientation: landscape) and (max-height: 480px){
-      .card{ padding:16px; border-radius:18px; margin-top:60px; }
-      .logo-izq-abs{ height:40px; top:-48px; }
-      .logo-der-abs{ height:44px; top:-48px; }
+      .card{ padding:16px; border-radius:18px; }
+      .logo-izq-abs{ height:40px; top:-50px; }
+      .logo-der-abs{ height:45px; top:-50px; }
       .btn{ min-width:200px; padding:12px 16px; }
     }
   </style>
 </head>
 <body>
   <main class="card">
-    <!-- Logos externos -->
     <img src="Logo-Ag-14.png" alt="Logo Aditech" class="logo-esquina logo-izq-abs">
     <img src="logo-sata.png" alt="Logo SATA" class="logo-esquina logo-der-abs">
 
-    <!-- Logo MUCH adentro -->
-    <img src="logo-much-nuevo1.png" alt="Logo MUCH" class="logo-much">
+    <img src="logo-much.png" alt="Logo MUCH" class="logo-much">
 
-    <h1>SPINOSAURUS RUNNER</h1>
-    <p class="sub">Salta los cactus, acumula puntos y ¡reclama tu premio! 🦖</p>
+    <h1>MUCH</h1>
+    <p class="sub">Aprende y gana premios!! 🎁</p>
 
-    <a class="btn" href="index.html?start=1">🚀 Jugar ahora</a>
-    <p class="tip">Tip: toca cualquier parte de la pantalla para saltar • evita los cactus</p>
+    <a class="btn" href="index.html?from=portada">🚀 Jugar ahora</a>
+    <p class="tip">Tip: Lee cuidasosamente las preguntas 🦖</p>
   </main>
 </body>
 </html>
+
+
 
 
 
